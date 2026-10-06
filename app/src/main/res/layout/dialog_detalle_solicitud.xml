@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dialog_padding">
+
+    <TextView
+        android:id="@+id/textViewTituloDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_small"
+        android:text="@string/dialogo_titulo_inicial"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/text_dialog_title"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewDialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imagen_dialogo_height"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:contentDescription="@string/imagen_solicitud"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_large"
+        android:text="@string/dialogo_label_solicitante"
+        android:textColor="@color/azul_principal"
+        android:textSize="@dimen/text_caption"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSolicitanteDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_small"
+        android:text="@string/nombre_inicial"
+        android:textColor="@color/azul_oscuro"
+        android:textSize="@dimen/text_body" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:text="@string/dialogo_label_problema"
+        android:textColor="@color/azul_principal"
+        android:textSize="@dimen/text_caption"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewProblemaDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_small"
+        android:text="@string/descripcion_inicial"
+        android:textColor="@color/gris_texto"
+        android:textSize="@dimen/text_body" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:text="@string/dialogo_label_categoria"
+        android:textColor="@color/azul_principal"
+        android:textSize="@dimen/text_caption"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewCategoriaDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_small"
+        android:text="@string/categoria_inicial"
+        android:textColor="@color/gris_texto"
+        android:textSize="@dimen/text_body" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_medium"
+        android:text="@string/dialogo_label_prioridad"
+        android:textColor="@color/azul_principal"
+        android:textSize="@dimen/text_caption"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_small"
+        app:cardBackgroundColor="@color/azul_superficie"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/gris_borde"
+        app:strokeWidth="@dimen/stroke_width">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/gap_medium">
+
+            <View
+                android:id="@+id/viewSemaforoDialog"
+                android:layout_width="@dimen/dialog_semaforo_size"
+                android:layout_height="@dimen/dialog_semaforo_size"
+                android:background="@drawable/bg_semaforo_neutro" />
+
+            <TextView
+                android:id="@+id/textViewPrioridadDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gap_medium"
+                android:text="@string/prioridad_baja"
+                android:textColor="@color/azul_oscuro"
+                android:textSize="@dimen/text_item_title"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

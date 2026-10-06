@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="categorias">
+        <item>@string/categoria_equipo</item>
+        <item>@string/categoria_software</item>
+        <item>@string/categoria_internet</item>
+        <item>@string/categoria_otro</item>
+    </string-array>
+</resources>

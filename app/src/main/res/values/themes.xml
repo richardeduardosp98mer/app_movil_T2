@@ -1,0 +1,20 @@
+<resources>
+    <style name="Base.Theme.TicketAula" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/azul_principal</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorSecondary">@color/azul_secundario</item>
+        <item name="colorOnSecondary">@color/blanco</item>
+        <item name="colorSecondaryContainer">@color/azul_suave</item>
+        <item name="colorOnSecondaryContainer">@color/azul_oscuro</item>
+        <item name="colorSurface">@color/blanco</item>
+        <item name="colorSurfaceContainer">@color/azul_superficie</item>
+        <item name="colorSurfaceContainerHigh">@color/blanco</item>
+        <item name="colorOutline">@color/gris_borde</item>
+        <item name="android:statusBarColor">@color/azul_oscuro</item>
+        <item name="android:navigationBarColor">@color/blanco</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Theme.TicketAula" parent="Base.Theme.TicketAula" />
+</resources>
